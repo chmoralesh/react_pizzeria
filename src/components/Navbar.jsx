@@ -10,7 +10,7 @@ const token = false;
 
 const Navbars = () => {
   return (
-    <Navbar expand="lg" className="bg-dark">
+    <Navbar expand="lg" className="bg-dark sticky-top">
       <Container fluid>
         <Navbar.Brand className="text-white" href="#">
           Pizzería Mamma Mia!
