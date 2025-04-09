@@ -16,8 +16,8 @@ const CardPizza = ({ name, price, ingredients, img, id }) => {
           <ul>
             {/* 🍕{" "} */}
             {Array.isArray(ingredients)
-              ? ingredients.map((e) => (
-                  <li className="list-group-item" key={id}>
+              ? ingredients.map((e, index) => (
+                  <li className="list-group-item" key={`${id}-${index}`}>
                     {e}
                   </li>
                 ))
